@@ -1,0 +1,150 @@
+.container {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--dark-blue);
+  overflow: hidden;
+}
+.content {
+  padding: 20px;
+  border-right: 1px solid var(--light);
+  height: 100%;
+}
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  height: 36px;
+  padding: 0 10px;
+  margin-top: 40px;
+}
+.input input {
+  height: 34px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--white);
+}
+.input input::placeholder {
+  color: var(--light);
+}
+.input svg {
+  height: 24px;
+  width: 24px;
+  fill: var(--white);
+  cursor: pointer;
+  transition: fill 100ms;
+}
+.input svg:hover {
+  fill: var(--info);
+}
+.habits {
+  margin-top: 40px;
+  overflow: auto;
+  height: 65%;
+  padding-right: 15px;
+}
+.habit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  border-bottom: 1px solid var(--light);
+  transition: background-color 100ms;
+}
+.habit:hover {
+  background-color: var(--info-hover);
+}
+.habit-active {
+  background-color: var(--info-hover);
+}
+.habit p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  color: var(--white);
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.habit div {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.habit div input {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.habit div svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--white);
+  cursor: pointer;
+}
+
+.habit div svg:hover {
+  fill: var(--error);
+  transition: fill 100ms;
+}
+
+.metrics {
+  padding: 20px;
+}
+
+.metrics h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 20px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--light);
+}
+
+.calendar-container {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.noMetrics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.noMetrics img {
+  width: 300px;
+}
+
+.noHabits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
+}
+
+.noHabits img {
+  width: 300px;
+}

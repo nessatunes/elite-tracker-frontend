@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  padding: 15px 0;
+  background-color: var(--black-blue);
+}
+.container img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin-top: 46px;
+}
+.links a {
+  text-decoration: none;
+}
+.links a svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--light);
+  transition: fill 100ms;
+}
+.links a:hover svg {
+  fill: var(--info);
+}
+.signout {
+  margin-top: auto;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  fill: var(--error);
+  transition: fill 100ms;
+}
+.signout:hover {
+  fill: var(--error-hover);
+}
+.timer {
+  margin-top: 20px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  fill: var(--white);
+  transition: fill 100ms;
+}
+.timer:hover {
+  fill: var(--info);
+}
+.active {
+  fill: var(--white);
+}
